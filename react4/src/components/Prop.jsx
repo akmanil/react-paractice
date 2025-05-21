@@ -75,7 +75,7 @@ export let Parent =({user})=>{
 export let Child =({user})=>{
     return (
         <>
-          <h1>Hello ,{user}</h1>
+          <h1 style = {{backgroundColor : "Red"}}>Hello ,{user}</h1>
         </>
     )
 }
