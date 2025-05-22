@@ -21,6 +21,13 @@ const Todo = () => {
     setData((prevData) => [...prevData, inputValue]);
     setInputValue("");
   };
+  let handleDeleteTodo = (value) =>{
+    const updateData = data.filter((currentData)=> currentData !== value);
+    setData(updateData);
+  }
+  const clearAllData =()=>{
+    setData([])
+  }
   return (
     <div>
       <h1>ToDo App</h1>
@@ -43,14 +50,16 @@ const Todo = () => {
                 (typedValue,index)=>{
                     return<li key ={index}>
                         {/* <span className="addingValue">{typedValue}</span> */}
-                        <input type="text" value = {typedValue} className ="inputValue"/>
-                        <button><MdDoneOutline /></button>
-                        <button> <MdDelete /></button>
+                        <span className ="inputValue">{typedValue}</span>
+                        <button 
+                        onClick={()=>handleDeleteTodo(typedValue)}> <MdDelete /></button>
                     </li>
                     
                 }
             )}
         </ul>
+        <button style={{backgroundColor:"Red"}}
+        onClick={clearAllData}>Clear All</button>
       </div>
     </div>
   );
