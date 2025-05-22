@@ -1,0 +1,13 @@
+ul li .addingValue{
+  background-color: aliceblue;
+  color: black;
+  width: 100px;
+  height: 60px;
+  text-align: left;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+  
+
+}
