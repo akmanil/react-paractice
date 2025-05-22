@@ -1,0 +1,41 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.par{
+  height: 50px;
+  width:150px;
+  border-radius: 10%;
+  background-color: azure;
+  color:black;
+  /* text-align: center;
+  align-items: center; */
+}
+.chi{
+  border-radius: 50%;
+  background-color: aqua;
+  height: 50px;
+  width:50px;
+  /* text-align: center; */
+  margin: 10px;
+}
+span{
+  align-items: center;
+  text-align: center;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  color: black;
+}
+.on{
+  background-color: rgb(104, 237, 104);
+  color: aliceblue;
+  transform: translateX(85px);
+}
+.off{
+  background-color: rgb(244, 242, 242);
+  color: rgb(0, 0, 0);
+  transform: translateX(0px);
+}
+
