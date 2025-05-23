@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 // import UseState from './Components/Hooks/UseState'
 import SignupForm from "./Components/Hooks/SignupForm"
+import UseEffect from './Components/Hooks/UseEffect'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,6 +13,7 @@ function App() {
     <>
      {/* <UseState /> */}
      <SignupForm />
+     <UseEffect />
     </>
   )
 }
